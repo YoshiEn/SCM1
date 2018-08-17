@@ -20,5 +20,16 @@ namespace SCM1_API.Repository
         {
             return DataAccess.DataAccess.SELECT_Model<MST_FLOOR_PLACE_DV>(SQL_FILE_NM, "FetchAllFloorPlace");
         }
+
+        /// <summary>
+        /// 事業所区分/区分名を登録する
+        /// </summary>
+        /// <param name="sqlId"></param>
+        /// <param name="dbModel"></param>
+        /// <returns></returns>
+        public static int RegistertFloorPlace(dynamic dbModel)
+        {
+            return DataAccess.DataAccess.ExecuteSQL(SQL_FILE_NM, "InsertFloorPlace", dbModel, Model.constants.DBAccessType.Insert);
+        }
     }
 }

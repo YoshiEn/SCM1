@@ -9,5 +9,29 @@
     FROM 
 	    MST_FLOOR_PLACE_DV
   </select>
+
+  <select id="InsertFloorPlace">
+    INSERT INTO MST_FLOOR_PLACE_DV
+    (FLOOR_PLACE_DV
+    , FLOOR_PLACE_DV_NM
+    , USR_CD
+    , TEL_NO
+    , ADDRESS
+    , CREATE_EMP_NO
+    , CREATE_DT
+    , LAST_UPDATE_EMP_NO
+    , LAST_UPDATE_DT)
+    VALUES
+    (NEXT VALUE FOR LOCATION_DATA_SEQ
+    , #FLOOR_PLACE_DV#
+    , #FLOOR_PLACE_DV_NM#
+    , #USR_CD#
+    , #TEL_NO#
+    , #EMP_NO#
+    , GETDATE()
+    , #EMP_NO#
+    , GETDATE()
+    )
+  </select>
   
 </SqlMap>

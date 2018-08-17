@@ -23,5 +23,28 @@ namespace SCM1_API.Model
             get; set;
         }
 
+        /// <summary>
+        /// ユーザーコード
+        /// </summary>
+        public string USR_CD
+        {
+            get; set;
+        }
+
+        /// <summary>
+        /// 電話番号
+        /// </summary>
+        public string TEL_NO
+        {
+            get; set;
+        }
+
+        /// <summary>
+        /// 住所
+        /// </summary>
+        public string ADDRESS
+        {
+            get; set;
+        }
     }
 }

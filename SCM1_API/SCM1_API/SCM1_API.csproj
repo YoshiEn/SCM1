@@ -14,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>SCM1_API</RootNamespace>
     <AssemblyName>SCM1_API</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
@@ -24,6 +24,7 @@
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
     <TargetFrameworkProfile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -210,6 +211,7 @@
     <Compile Include="Repository\MST_FLOOR_PLACE_DV_Repository.cs" />
     <Compile Include="Repository\MST_SEAT_Repository.cs" />
     <Compile Include="Repository\T_EMP_LOCATION_Repository.cs" />
+    <Compile Include="Service\CLIENT_AREA_Service.cs" />
     <Compile Include="Service\EMP_LOCATION_Service.cs" />
     <Compile Include="Service\EMP_Service.cs" />
     <Compile Include="Service\PHONE_Service.cs" />

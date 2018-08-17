@@ -12,11 +12,15 @@ namespace SCM1_API.Model.ScreenModel.EmpLocationInfo
     public class EmpLocationRequest : ScmApiBaseParameter.Request
     {
         [DataMember]
-        public string EmpNo { get; set; }
+        public string FLOOR_PLACE_DV { get; set; }
         [DataMember]
-        public string seatNo { get; set; }
+        public string FLOOR_PLACE_DV_NM { get; set; }
         [DataMember]
-        public bool FixedFlg { get; set; }
+        public string USR_CD { get; set; }
+        [DataMember]
+        public string TEL_NO { get; set; }
+        [DataMember]
+        public string ADDRESS { get; set; }
     }
 
     public class EmpLocationResponse : ScmApiBaseParameter.Response

@@ -34,5 +34,18 @@ namespace SCM1_API.PresentationService
 
             return returnModel;
         }
+
+        /// <summary>
+        /// 事業所区分/区分名を登録する
+        /// </summary>
+        /// <returns></returns>
+        public FloorPlaceResponse RegisterFloorPlace(FloorPlaceRequest req)
+        {
+            return new FloorPlaceResponse()
+            {
+                ProcessStatus = STATUS.OK,
+                ResponseMessage = MESSAGE.MSG_OK,
+            };
+        }
     }
 }

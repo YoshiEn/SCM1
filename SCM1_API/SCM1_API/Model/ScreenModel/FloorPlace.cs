@@ -10,7 +10,12 @@ namespace SCM1_API.Model.ScreenModel.FloorPlace
     [DataContract]
     public class FloorPlaceRequest : ScmApiBaseParameter.Request
     {
-        //追加項目なし
+        [DataMember]
+        public string EmpNo { get; set; }
+        [DataMember]
+        public string seatNo { get; set; }
+        [DataMember]
+        public bool FixedFlg { get; set; }
     }
 
     public class FloorPlaceResponse : ScmApiBaseParameter.Response
