@@ -63,7 +63,7 @@ namespace SCM1_API.APIController
         /// </summary>
         /// <param name="id"></param>
         /// <param name="value"></param>
-        [SwaggerOperation("ClientArea")]
+        [SwaggerOperation("InsertFloorPlace")]
         [LoggingFilter("api/floorplace")] // <-- AOP（処理開始、終了時のロギング処理）
         public JsonResult<object> Put(JToken reqJson) // <-- ActionResultのJsonResultを戻り値とする
         {
