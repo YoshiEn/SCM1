@@ -25,7 +25,6 @@ namespace SCM1_API.APIController
             presentationService = new FLOOR_PLACE_PresentationService();
         }
 
-
         /// <summary>
         /// GET _事業所区分/区分名を全件取得する<controller> 
         /// </summary>
@@ -89,6 +88,5 @@ namespace SCM1_API.APIController
                 return Json((object)new FloorPlaceResponse() { ProcessStatus = STATUS.ER, ResponseMessage = MESSAGE.MSG_ER });
             }
         }
-
     }
 }

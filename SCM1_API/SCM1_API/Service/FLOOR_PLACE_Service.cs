@@ -29,5 +29,16 @@ namespace SCM1_API.Service
             var param = new { EMP_NO = empId, FLOOR_PLACE_DV = clientAreaDv, FLOOR_PLACE_DV_NM = clientAreaDvName, USR_CD = userCd, TEL_NO = phoneNo, ADDRESS = address };
             return MST_FLOOR_PLACE_DV_Repository.RegistertFloorPlace(param) > 0 ? true : false;
         }
+
+        /// <summary>
+        /// 事業所情報を編集する
+        /// </summary>
+        /// <param name="empId"></param>
+        /// <param name="clientAreaDv"></param>
+        public bool ModifyFloorPlace(int empId, string clientAreaDv, string clientAreaDvName, string userCd, string phoneNo, string address)
+        {
+            var param = new { EMP_NO = empId, FLOOR_PLACE_DV = clientAreaDv, FLOOR_PLACE_DV_NM = clientAreaDvName, USR_CD = userCd, TEL_NO = phoneNo, ADDRESS = address };
+            return MST_FLOOR_PLACE_DV_Repository.RegistertFloorPlace(param) > 0 ? true : false;
+        }
     }
 }

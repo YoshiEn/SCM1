@@ -27,11 +27,27 @@
     , #FLOOR_PLACE_DV_NM#
     , #USR_CD#
     , #TEL_NO#
+    , #ADDRESS#
     , #EMP_NO#
     , GETDATE()
     , #EMP_NO#
     , GETDATE()
     )
+  </select>
+
+  <select id="ModifyFloorPlace">
+    UPDATE MST_FLOOR_PLACE_DV
+    SET
+    FLOOR_PLACE_DV = #FLOOR_PLACE_DV#
+    , FLOOR_PLACE_DV_NM = #FLOOR_PLACE_DV_NM#
+    , USR_CD = #USR_CD#
+    , TEL_NO = #TEL_NO#
+    , ADDRESS = #ADDRESS#
+    , CREATE_EMP_NO = #EMP_NO#
+    , CREATE_DT = GETDATE()
+    , LAST_UPDATE_EMP_NO = #EMP_NO#
+    , LAST_UPDATE_D = GETDATE()
+    where FLOOR_PLACE_DV = #FLOOR_PLACE_DV#
   </select>
   
 </SqlMap>

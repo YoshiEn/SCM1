@@ -22,7 +22,7 @@ namespace SCM1_API.Repository
         }
 
         /// <summary>
-        /// 事業所区分/区分名を登録する
+        /// 事業所情報を登録する
         /// </summary>
         /// <param name="sqlId"></param>
         /// <param name="dbModel"></param>
@@ -30,6 +30,17 @@ namespace SCM1_API.Repository
         public static int RegistertFloorPlace(dynamic dbModel)
         {
             return DataAccess.DataAccess.ExecuteSQL(SQL_FILE_NM, "InsertFloorPlace", dbModel, Model.constants.DBAccessType.Insert);
+        }
+
+        /// <summary>
+        /// 事業所情報を編集する
+        /// </summary>
+        /// <param name="sqlId"></param>
+        /// <param name="dbModel"></param>
+        /// <returns></returns>
+        public static int ModifyFloorPlace(dynamic dbModel)
+        {
+            return DataAccess.DataAccess.ExecuteSQL(SQL_FILE_NM, "ModifyFloorPlace", dbModel, Model.constants.DBAccessType.Insert);
         }
     }
 }
