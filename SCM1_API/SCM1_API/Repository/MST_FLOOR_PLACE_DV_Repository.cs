@@ -40,7 +40,7 @@ namespace SCM1_API.Repository
         /// <returns></returns>
         public static int ModifyFloorPlace(dynamic dbModel)
         {
-            return DataAccess.DataAccess.ExecuteSQL(SQL_FILE_NM, "ModifyFloorPlace", dbModel, Model.constants.DBAccessType.Insert);
+            return DataAccess.DataAccess.ExecuteSQL(SQL_FILE_NM, "ModifyFloorPlace", dbModel, Model.constants.DBAccessType.Update);
         }
     }
 }

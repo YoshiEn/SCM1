@@ -20,8 +20,5 @@
       MEL.FLOOR_PLACE_DV = #FLOOR_PLACE_DV#
 
   </select>
-  
-
-  
 
 </SqlMap>

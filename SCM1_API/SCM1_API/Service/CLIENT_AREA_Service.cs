@@ -19,7 +19,7 @@ namespace SCM1_API.Service
         public bool RegisterEmpLocation_Service(int empId, string clientAreaDv, string clientAreaDvName, string userCd, string phoneNo, string address)
         {
             var param = new { EMP_NO = empId, FLOOR_PLACE_DV = clientAreaDv, FLOOR_PLACE_DV_NM = clientAreaDvName, USR_CD = userCd, TEL_NO = phoneNo, ADDRESS = address  };
-            return MST_FLOOR_PLACE_DV_Repository.RegistertClienntArea(param) > 0 ? true : false;
+            return MST_FLOOR_PLACE_DV_Repository.RegistertFloorPlace(param) > 0 ? true : false;
         }
     }
 }

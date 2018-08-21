@@ -10,7 +10,7 @@
 	    MST_FLOOR_PLACE_DV
   </select>
 
-  <select id="InsertFloorPlace">
+  <insert id="InsertFloorPlace">
     INSERT INTO MST_FLOOR_PLACE_DV
     (FLOOR_PLACE_DV
     , FLOOR_PLACE_DV_NM
@@ -27,15 +27,15 @@
     , #FLOOR_PLACE_DV_NM#
     , #USR_CD#
     , #TEL_NO#
-    , #ADDRESS#
+    , #ADDRESS#                                     
     , #EMP_NO#
     , GETDATE()
     , #EMP_NO#
     , GETDATE()
     )
-  </select>
+  </insert>
 
-  <select id="ModifyFloorPlace">
+  <update id="ModifyFloorPlace">
     UPDATE MST_FLOOR_PLACE_DV
     SET
     FLOOR_PLACE_DV = #FLOOR_PLACE_DV#
@@ -48,6 +48,6 @@
     , LAST_UPDATE_EMP_NO = #EMP_NO#
     , LAST_UPDATE_D = GETDATE()
     where FLOOR_PLACE_DV = #FLOOR_PLACE_DV#
-  </select>
+  </update>
   
 </SqlMap>
