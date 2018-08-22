@@ -11,6 +11,8 @@ namespace SCM1_API.Model.ScreenModel.FloorPlace
     public class FloorPlaceRequest : ScmApiBaseParameter.Request
     {
         [DataMember]
+        public string EMP_ID { get; set; }
+        [DataMember]
         public string FLOOR_PLACE_DV { get; set; }
         [DataMember]
         public string FLOOR_PLACE_DV_NM { get; set; }

@@ -169,7 +169,6 @@
     <Compile Include="APIController\empController.cs" />
     <Compile Include="APIController\floorPlaceController.cs" />
     <Compile Include="APIController\emplocationController.cs" />
-    <Compile Include="APIController\floorPlaceDisplayController.cs" />
     <Compile Include="APIController\phoneController.cs" />
     <Compile Include="APIController\seatController.cs" />
     <Compile Include="APIController\seatWithEmpController.cs" />
@@ -212,7 +211,6 @@
     <Compile Include="Repository\MST_FLOOR_PLACE_DV_Repository.cs" />
     <Compile Include="Repository\MST_SEAT_Repository.cs" />
     <Compile Include="Repository\T_EMP_LOCATION_Repository.cs" />
-    <Compile Include="Service\CLIENT_AREA_Service.cs" />
     <Compile Include="Service\EMP_LOCATION_Service.cs" />
     <Compile Include="Service\EMP_Service.cs" />
     <Compile Include="Service\PHONE_Service.cs" />

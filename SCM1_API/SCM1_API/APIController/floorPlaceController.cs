@@ -20,6 +20,7 @@ namespace SCM1_API.APIController
     {
 
         private FLOOR_PLACE_PresentationService presentationService;
+
         public floorPlaceController()
         {
             presentationService = new FLOOR_PLACE_PresentationService();
@@ -78,7 +79,7 @@ namespace SCM1_API.APIController
                         ResponseMessage = MESSAGE.MSG_TOKEN_ER
                     });
 
-                //事業所区分/区分名を登録
+                //事業所情報を登録
                 var res = presentationService.RegisterFloorPlace(req);
                 return Json((object)res);
             }
@@ -88,5 +89,38 @@ namespace SCM1_API.APIController
                 return Json((object)new FloorPlaceResponse() { ProcessStatus = STATUS.ER, ResponseMessage = MESSAGE.MSG_ER });
             }
         }
+
+        //// PUT api/<controller>/5
+        ///// <summary>
+        ///// PUT_事業所区分/区分名を編集する
+        ///// </summary>
+        ///// <param name="id"></param>
+        ///// <param name="value"></param>
+        //[SwaggerOperation("UpdateFloorPlace")]
+        //[LoggingFilter("api/floorplace")] // <-- AOP（処理開始、終了時のロギング処理）
+        //public JsonResult<object> Update(JToken reqJson) // <-- ActionResultのJsonResultを戻り値とする
+        //{
+        //    try
+        //    {
+        //        var req = JsonUtil.Deserialize<FloorPlaceRequest>(reqJson.ToString()); // <-- JSONをモデルに変換
+
+        //        //トークンを検証
+        //        if (!Service.TokenHandling.InspectToken_direct(req.Token))
+        //            return Json((object)new FloorPlaceResponse()
+        //            {
+        //                ProcessStatus = STATUS.TOKEN_ER,
+        //                ResponseMessage = MESSAGE.MSG_TOKEN_ER
+        //            });
+
+        //        //事業所情報を編集
+        //        var res = presentationService.ModifyFloorPlace(req);
+        //        return Json((object)res);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Logger.WriteException(MESSAGE.MSG_ER, ex);
+        //        return Json((object)new FloorPlaceResponse() { ProcessStatus = STATUS.ER, ResponseMessage = MESSAGE.MSG_ER });
+        //    }
+        //}
     }
 }

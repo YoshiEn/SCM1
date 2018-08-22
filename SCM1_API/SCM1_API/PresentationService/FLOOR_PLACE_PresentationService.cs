@@ -41,6 +41,7 @@ namespace SCM1_API.PresentationService
         /// <returns></returns>
         public FloorPlaceResponse RegisterFloorPlace(FloorPlaceRequest req)
         {
+            floorPlace_Service.RegisterFloorPlace_Service(int.Parse(req.EMP_ID), req.FLOOR_PLACE_DV, req.FLOOR_PLACE_DV_NM, req.USR_CD, req.TEL_NO, req.ADDRESS);
             return new FloorPlaceResponse()
             {
                 ProcessStatus = STATUS.OK,
@@ -54,6 +55,7 @@ namespace SCM1_API.PresentationService
         /// <returns></returns>
         public FloorPlaceResponse ModifyFloorPlace(FloorPlaceRequest req)
         {
+            floorPlace_Service.ModifyFloorPlace_Service(int.Parse(req.EMP_ID), req.FLOOR_PLACE_DV, req.FLOOR_PLACE_DV_NM, req.USR_CD, req.TEL_NO, req.ADDRESS);
             return new FloorPlaceResponse()
             {
                 ProcessStatus = STATUS.OK,
