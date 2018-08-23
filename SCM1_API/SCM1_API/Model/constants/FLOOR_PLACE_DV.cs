@@ -15,5 +15,9 @@ namespace SCM1_API.Model.constants
         /// 新浦安10F（海側）
         /// </summary>
         public const string SINURA_SEA_SIDE = "F02";
+        /// <summary>
+        /// 常駐先一覧
+        /// </summary>
+        public const string CLIENT_AREA = "F03";
     }
 }

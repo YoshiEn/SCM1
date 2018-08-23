@@ -22,4 +22,9 @@ namespace SCM1_API.Model.ScreenModel.seat
     {
         public IEnumerable<SeatWithEmp> SeatWithEmpInfo { get; set; }
     }
+
+    public class ClientAreaSeatResponse : ScmApiBaseParameter.Response
+    {
+        public IEnumerable<ClientAreaSeat> ClientAreaSeat { get; set; }
+    }
 }
