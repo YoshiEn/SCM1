@@ -89,7 +89,7 @@ namespace SCM1_API.Model.DataModel
         /// <summary>
         /// 電話番号
         /// </summary>
-        public string PHONE_NO
+        public string TEL_NO
         {
             get; set;
         }
