@@ -33,5 +33,15 @@ namespace SCM1_API.Repository
         {
             return DataAccess.DataAccess.SELECT_Model<SeatWithEmp>(SQL_FILE_NM, "FetchSeatWithEmpInfo", TargetAreaDv);
         }
+
+        /// <summary>
+        /// 座席と常駐先情報と登録済み社員情報取得
+        /// </summary>
+        /// <param name="TargetEMP_NO">絞込条件に使用する社員番号</param>
+        /// <returns></returns>
+        public static IEnumerable<ClientAreaSeat> FetchClientArea_Repository(dynamic TargetAreaDv)
+        {
+            return DataAccess.DataAccess.SELECT_Model<ClientAreaSeat>(SQL_FILE_NM, "FetchClientAreaSeat", TargetAreaDv);
+        }
     }
 }

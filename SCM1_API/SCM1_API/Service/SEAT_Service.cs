@@ -31,5 +31,15 @@ namespace SCM1_API.Service
             var param = new { FLOOR_PLACE_DV = postedAreaDv };
             return MST_SEAT_Repository.FetchSeatWithEmpInfo_Repository(param);
         }
+
+        /// <summary>
+        /// 座席情報と常駐先情報と登録済み社員情報を取得する
+        /// </summary>
+        /// <returns></returns>
+        public IEnumerable<ClientAreaSeat> FetchClientAreaSeat_Service(string postedAreaDv)
+        {
+            var param = new { FLOOR_PLACE_DV = postedAreaDv };
+            return MST_SEAT_Repository.FetchClientArea_Repository(param);
+        }
     }
 }

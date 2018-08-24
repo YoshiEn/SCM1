@@ -23,7 +23,7 @@ namespace SCM1_API.APIController
             presentationService = new SEAT_PresentationService();
         }
         /// <summary>
-        /// POST_事業所別に座席マスタと電話番号と登録済み社員の情報を取得する<controller> 
+        /// POST_事業所別に座席マスタと常駐先情報と登録済み社員の情報を取得する<controller> 
         /// </summary>
         /// <param name="empno"></param>
         /// <returns></returns>
